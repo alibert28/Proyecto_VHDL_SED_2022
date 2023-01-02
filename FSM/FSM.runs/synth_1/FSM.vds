@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Dec 30 16:31:26 2022
+# Process ID: 8768
+# Current directory: D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.runs/synth_1
+# Command line: vivado.exe -log FSM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FSM.tcl
+# Log file: D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.runs/synth_1/FSM.vds
+# Journal file: D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FSM.tcl -notrace
+Command: synth_design -top FSM -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16668
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1120.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'FSM' [D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.srcs/sources_1/new/FSM.vhd:20]
+ERROR: [Synth 8-27] else clause after check for clock not supported [D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.srcs/sources_1/new/FSM.vhd:72]
+ERROR: [Synth 8-285] failed synthesizing module 'FSM' [D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.srcs/sources_1/new/FSM.vhd:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1120.594 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 30 16:31:41 2022...

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TIME_DELAY.srcs/sources_1/new/TIME_DELAY.vhd" \
+"../../../../TIME_DELAY.srcs/sim_1/new/TIME_DELAY_tb.vhd" \
+
+# Do not sort compile order
+nosort

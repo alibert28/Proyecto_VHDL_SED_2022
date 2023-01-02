@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: # INFO:     440000 ps. SUCCESS: Simulation stopped due to successful completion!
+Time: 440 ns  Iteration: 0  Process: /COUNTER_tst/always  File: D:/Proyectos/VHDL/Secuenciales/COUNTER/COUNTER.srcs/sim_1/new/COUNTER_tst.vhd
+$finish called at time : 440 ns : File "D:/Proyectos/VHDL/Secuenciales/COUNTER/COUNTER.srcs/sim_1/new/COUNTER_tst.vhd" Line 64

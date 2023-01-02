@@ -1,0 +1,45 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity PRODUCT_SELECTOR is
+port (
+    reset : in  std_logic;
+    CLK   : in  std_logic;
+    CE    : in  std_logic;
+    q     : out std_logic_vector(1 downto 0)
+);
+end PRODUCT_SELECTOR;
+
+architecture structural of PRODUCT_SELECTOR is
+
+signal q_reg   : unsigned(1 downto 0);
+signal q_next  : unsigned(1 downto 0) := "00";
+
+begin
+
+seq: process(reset,CLK)
+begin
+    if (reset = '1') then
+        q_reg <= (others => '0');
+    elsif (CLK'event and CLK = '1') then
+        q_reg <= q_next;  
+    end if;
+end process seq;
+
+comb: process(CE, q_reg)
+begin
+    if (CE = '1') then
+        if (q_reg = 3) then
+            q_next <= "00";
+        else	
+            q_next <= q_reg + 1;
+        end if; 	
+    else
+        q_next <= "00"; --q_reg
+    end if;
+end process comb;
+  
+q <= std_logic_vector(q_reg); 
+  
+end structural;

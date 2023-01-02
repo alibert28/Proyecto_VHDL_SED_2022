@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Jan  1 13:26:32 2023
+# Process ID: 22468
+# Current directory: D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.runs/synth_1
+# Command line: vivado.exe -log PRODUCT_SELECTOR.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source PRODUCT_SELECTOR.tcl
+# Log file: D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.runs/synth_1/PRODUCT_SELECTOR.vds
+# Journal file: D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PRODUCT_SELECTOR.tcl -notrace

@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: # INFO:     100000 ps. SUCCESS: Simulation stopped due to successful completion!
+Time: 100 ns  Iteration: 0  Process: /RISING_EDGE_DETECTOR_tst/always  File: C:/Users/UPM/RISING_EDGE_DETECTOR/RISING_EDGE_DETECTOR.srcs/sim_1/new/RISING_EDGE_DETECTOR_tst.vhd
+$finish called at time : 100 ns : File "C:/Users/UPM/RISING_EDGE_DETECTOR/RISING_EDGE_DETECTOR.srcs/sim_1/new/RISING_EDGE_DETECTOR_tst.vhd" Line 53
+Failure: # INFO:     100000 ps. SUCCESS: Simulation stopped due to successful completion!
+Time: 100 ns  Iteration: 0  Process: /RISING_EDGE_DETECTOR_tst/always  File: C:/Users/UPM/RISING_EDGE_DETECTOR/RISING_EDGE_DETECTOR.srcs/sim_1/new/RISING_EDGE_DETECTOR_tst.vhd
+$finish called at time : 100 ns : File "C:/Users/UPM/RISING_EDGE_DETECTOR/RISING_EDGE_DETECTOR.srcs/sim_1/new/RISING_EDGE_DETECTOR_tst.vhd" Line 53

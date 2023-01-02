@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: # INFO:     210000 ps. SUCCESS: Simulation stopped due to successful completion!
+Time: 210 ns  Iteration: 0  Process: /PRODUCT_SELECTOR_tb/always  File: D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.srcs/sim_1/new/PRODUCT_SELECTOR_tb.vhd
+$finish called at time : 210 ns : File "D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.srcs/sim_1/new/PRODUCT_SELECTOR_tb.vhd" Line 57

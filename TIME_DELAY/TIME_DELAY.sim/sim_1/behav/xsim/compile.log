@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sources_1/new/TIME_DELAY.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TIME_DELAY'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sim_1/new/TIME_DELAY_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'TIME_DELAY_tb'

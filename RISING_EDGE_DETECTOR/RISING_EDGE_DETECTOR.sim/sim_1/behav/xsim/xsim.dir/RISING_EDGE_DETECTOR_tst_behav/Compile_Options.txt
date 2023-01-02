@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "RISING_EDGE_DETECTOR_tst_behav" "xil_defaultlib.RISING_EDGE_DETECTOR_tst" -log "elaborate.log" 

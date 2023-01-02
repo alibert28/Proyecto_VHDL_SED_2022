@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.srcs/sources_1/new/PRODUCT_SELECTOR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PRODUCT_SELECTOR'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.srcs/sim_1/new/PRODUCT_SELECTOR_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PRODUCT_SELECTOR_tb'

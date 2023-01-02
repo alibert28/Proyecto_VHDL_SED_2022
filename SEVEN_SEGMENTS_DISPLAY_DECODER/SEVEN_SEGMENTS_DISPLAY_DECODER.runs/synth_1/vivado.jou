@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Dec 28 20:42:29 2022
+# Process ID: 7612
+# Current directory: C:/Users/UPM/Desktop/SEVEN_SEGMENTS_DISPLAY_DECODER/SEVEN_SEGMENTS_DISPLAY_DECODER.runs/synth_1
+# Command line: vivado.exe -log SEVEN_SEGMENTS_DISPLAY_DECODER.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SEVEN_SEGMENTS_DISPLAY_DECODER.tcl
+# Log file: C:/Users/UPM/Desktop/SEVEN_SEGMENTS_DISPLAY_DECODER/SEVEN_SEGMENTS_DISPLAY_DECODER.runs/synth_1/SEVEN_SEGMENTS_DISPLAY_DECODER.vds
+# Journal file: C:/Users/UPM/Desktop/SEVEN_SEGMENTS_DISPLAY_DECODER/SEVEN_SEGMENTS_DISPLAY_DECODER.runs/synth_1\vivado.jou
+# Running On: upm00235, OS: Windows, CPU Frequency: 2394 MHz, CPU Physical cores: 6, Host memory: 6404 MB
+#-----------------------------------------------------------
+source SEVEN_SEGMENTS_DISPLAY_DECODER.tcl -notrace

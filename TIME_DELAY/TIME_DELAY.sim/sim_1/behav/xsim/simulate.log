@@ -1,0 +1,7 @@
+Time resolution is 1 ps
+Failure: # INFO:     470000 ps. SUCCESS: Simulation stopped due to successful completion!
+Time: 470 ns  Iteration: 0  Process: /TIME_DELAY_tb/always  File: D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sim_1/new/TIME_DELAY_tb.vhd
+$finish called at time : 470 ns : File "D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sim_1/new/TIME_DELAY_tb.vhd" Line 61
+Failure: # INFO:     470000 ps. SUCCESS: Simulation stopped due to successful completion!
+Time: 470 ns  Iteration: 0  Process: /TIME_DELAY_tb/always  File: D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sim_1/new/TIME_DELAY_tb.vhd
+$finish called at time : 470 ns : File "D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sim_1/new/TIME_DELAY_tb.vhd" Line 61
