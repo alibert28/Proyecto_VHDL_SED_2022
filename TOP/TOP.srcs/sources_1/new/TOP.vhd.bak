@@ -56,6 +56,9 @@ signal BUTTON_OK_in : std_logic;
 
 signal CE_EM_in : std_logic;
 
+constant clk_freq    : INTEGER := 100000000;  --system clock frequency in Hz
+constant stable_time : INTEGER := 10;         --time DATA must remain stable in ms
+
 begin
 f_in2 <= f_in & "0000";
 MONTO_INGRESADO_in2 <= "000" & MONTO_INGRESADO_in;
@@ -100,7 +103,7 @@ i4 : FSM
 port map(
     MONTO_INGRESADO => MONTO_INGRESADO_in,
     DEVOLVER_DINERO => DEVOLVER_DINERO_in,
-    BUTTON_OK       => BUTTON_OK_in,
+    BUTTON_OK       => BUTTON_OK,
     RESET           => RESET,
     CLK             => CLK,
     PRODUCTO        => PRODUCTO,
@@ -146,25 +149,22 @@ port map(
 );
 
 i9 : DEBOUNCE
+generic map(
+    clk_freq => clk_freq,  --system clock frequency in Hz
+    stable_time => stable_time        --time DATA must remain stable in ms
+)
 port map(
     DATA => data_s_in,
+    reset => RESET,
     CLK => CLK,
     OP_DATA => OP_DATA_in
 );
 
 i10 : RISING_EDGE_DETECTOR
 port map(
-    CLK => CLK,
+    clk => CLK,
     SYNC_IN => OP_DATA_in,
     EDGE => EDGE_in
-);
-
-i11 : SYNCHRONIZER
-port map(
-    reset => RESET,
-	clk => CLK,
-	data_ns => BUTTON_OK,
-	data_s => BUTTON_OK_in
 );
 
 end structural;

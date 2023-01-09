@@ -120,8 +120,13 @@ port map(
     b => '0',
     f => IN_100C_in
 );
-
-CE_in <= not CE;
+i4 :mux2a1
+port map(
+    sel => CE,
+    a => '1',
+    b => '0',
+    f => CE_in
+);
 
 MONTO_10C_int  <= to_integer(unsigned("0" & COUNT_10C));
 MONTO_20C_int  <= 2 * to_integer(unsigned(COUNT_20C));

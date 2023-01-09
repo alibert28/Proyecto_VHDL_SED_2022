@@ -6,7 +6,7 @@ use work.my_components.all;
 
 entity TOP is
 port(
-    RESET   : in std_logic;
+    RESET_N   : in std_logic;
     CLK     : in std_logic;
     IN_10C  : in std_logic;
     IN_20C  : in std_logic;
@@ -56,10 +56,15 @@ signal BUTTON_OK_in : std_logic;
 
 signal CE_EM_in : std_logic;
 
+signal RESET : std_logic;
+
 constant clk_freq    : INTEGER := 100000000;  --system clock frequency in Hz
 constant stable_time : INTEGER := 10;         --time DATA must remain stable in ms
 
 begin
+
+RESET <= not RESET_N;
+
 f_in2 <= f_in & "0000";
 MONTO_INGRESADO_in2 <= "000" & MONTO_INGRESADO_in;
 

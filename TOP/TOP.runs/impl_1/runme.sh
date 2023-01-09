@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.runs/impl_1'
+HD_PWD='C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

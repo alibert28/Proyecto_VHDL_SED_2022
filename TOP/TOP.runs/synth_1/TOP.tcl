@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.runs/synth_1/TOP.tcl"
+  variable script "C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.runs/synth_1/TOP.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,41 +70,39 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache C:/Users/ALIBERT/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-22704-LAPTOP-8NMV4H17/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_param chipscope.maxJobs 1
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7a35tcpg236-1
+create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.cache/wt [current_project]
-set_property parent.project_path D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.cache/wt [current_project]
+set_property parent.project_path C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property board_part digilentinc.com:basys3:part0:1.2 [current_project]
-set_property ip_output_repo d:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.cache/ip [current_project]
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+set_property ip_output_repo c:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  D:/Proyectos/VHDL/VHDL_PROJECT/BIN_TO_BCD/BIN_TO_BCD.srcs/sources_1/new/BIN_TO_BCD.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/COUNTER/COUNTER.srcs/sources_1/new/COUNTER.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/DEBOUNCE/DEBOUNCE.srcs/sources_1/new/DEBOUNCE.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/DEC_2a4.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/ENTERED_COINS_COUNTER/ENTERED_COINS_COUNTER.srcs/sources_1/new/ENTERED_COINS_COUNTER.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/ENTERED_MONEY/ENTERED_MONEY.srcs/sources_1/new/ENTERED_MONEY.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/FSM/FSM.srcs/sources_1/new/FSM.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/PRODUCT_SELECTOR/PRODUCT_SELECTOR.srcs/sources_1/new/PRODUCT_SELECTOR.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/RISING_EDGE_DETECTOR/RISING_EDGE_DETECTOR.srcs/sources_1/new/RISING_EDGE_DETECTOR.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/SEVEN_SEGMENTS_DISPLAY_DECODER/SEVEN_SEGMENTS_DISPLAY_DECODER.srcs/sources_1/new/SEVEN_SEGMENTS_DISPLAY_DECODER.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/SYNCHRONIZER/SYNCHRONIZER.srcs/sources_1/new/SYNCHRONIZER.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/TIME_DELAY/TIME_DELAY.srcs/sources_1/new/TIME_DELAY.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.srcs/sources_1/new/my_components.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/mux2a1.vhd
-  D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.srcs/sources_1/new/TOP.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/BIN_TO_BCD/BIN_TO_BCD.srcs/sources_1/new/BIN_TO_BCD.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/COUNTER/COUNTER.srcs/sources_1/new/COUNTER.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/DEBOUNCE/DEBOUNCE.srcs/sources_1/new/DEBOUNCE.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/DEC_2a4.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/ENTERED_COINS_COUNTER/ENTERED_COINS_COUNTER.srcs/sources_1/new/ENTERED_COINS_COUNTER.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/ENTERED_MONEY/ENTERED_MONEY.srcs/sources_1/new/ENTERED_MONEY.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/FSM/FSM.srcs/sources_1/new/FSM.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/PRODUCT_SELECTOR/PRODUCT_SELECTOR.srcs/sources_1/new/PRODUCT_SELECTOR.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/RISING_EDGE_DETECTOR/RISING_EDGE_DETECTOR.srcs/sources_1/new/RISING_EDGE_DETECTOR.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/SEVEN_SEGMENTS_DISPLAY_DECODER/SEVEN_SEGMENTS_DISPLAY_DECODER.srcs/sources_1/new/SEVEN_SEGMENTS_DISPLAY_DECODER.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/SYNCHRONIZER/SYNCHRONIZER.srcs/sources_1/new/SYNCHRONIZER.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TIME_DELAY/TIME_DELAY.srcs/sources_1/new/TIME_DELAY.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.srcs/sources_1/new/my_components.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/mux2a1.vhd
+  C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.srcs/sources_1/new/TOP.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -115,14 +113,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.srcs/constrs_1/imports/VHDL/Basys-3-Master.xdc
-set_property used_in_implementation false [get_files D:/Proyectos/VHDL/VHDL_PROJECT/TOP/TOP.srcs/constrs_1/imports/VHDL/Basys-3-Master.xdc]
+read_xdc C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.srcs/constrs_1/imports/VHDL/Nexys-4-DDR-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/ALIBERT/Documents/Proyecto_VHDL_SED_2022/TOP/TOP.srcs/constrs_1/imports/VHDL/Nexys-4-DDR-Master.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top TOP -part xc7a35tcpg236-1
+synth_design -top TOP -part xc7a100tcsg324-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

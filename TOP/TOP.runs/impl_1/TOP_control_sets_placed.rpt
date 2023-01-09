@@ -1,11 +1,11 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Sun Jan  1 18:16:19 2023
+| Date         : Mon Jan  9 13:40:35 2023
 | Host         : LAPTOP-8NMV4H17 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
 | Design       : TOP
-| Device       : xc7a35t
+| Device       : xc7a100t
 ------------------------------------------------------------------------------------
 
 Control Set Information
@@ -59,36 +59,36 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              31 |           10 |
-| No           | No                    | Yes                    |              32 |           13 |
-| No           | Yes                   | No                     |              33 |           16 |
+| No           | No                    | Yes                    |              32 |           14 |
+| No           | Yes                   | No                     |              33 |           11 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |              16 |            4 |
-| Yes          | Yes                   | No                     |             132 |           32 |
+| Yes          | No                    | Yes                    |              16 |            7 |
+| Yes          | Yes                   | No                     |             132 |           33 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------------+----------------------------------+------------------+----------------+--------------+
-|  Clock Signal  |    Enable Signal    |         Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
-+----------------+---------------------+----------------------------------+------------------+----------------+--------------+
-|  i10/EDGE_in   |                     | i4/FSM_onehot_state_reg_reg[2]_0 |                1 |              2 |         2.00 |
-|  i3/p_0_in     |                     |                                  |                1 |              2 |         2.00 |
-|  CLK_IBUF_BUFG | i1/ECC_20C/i2/E[0]  | i4/AR[0]                         |                1 |              4 |         4.00 |
-|  CLK_IBUF_BUFG | i1/ECC_50C/i2/E[0]  | i4/AR[0]                         |                1 |              4 |         4.00 |
-|  CLK_IBUF_BUFG | i1/ECC_100C/i2/E[0] | i4/AR[0]                         |                1 |              4 |         4.00 |
-|  CLK_IBUF_BUFG | i1/ECC_10C/i2/E[0]  | i4/AR[0]                         |                1 |              4 |         4.00 |
-|  CLK_IBUF_BUFG |                     | RESET_IBUF                       |                6 |             10 |         1.67 |
-|  CLK_IBUF_BUFG |                     | i4/AR[0]                         |                6 |             20 |         3.33 |
-|  CLK_IBUF_BUFG | i4/count0_2         | i4/FSM_onehot_state_reg_reg[4]_3 |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG | i4/count0_0         | i4/FSM_onehot_state_reg_reg[4]_1 |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG | i4/count0           | i4/FSM_onehot_state_reg_reg[4]_0 |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG | i4/count0_1         | i4/FSM_onehot_state_reg_reg[4]_2 |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG | i9/count0           | i9/count[0]_i_1__3_n_0           |                5 |             20 |         4.00 |
-|  CLK_IBUF_BUFG |                     |                                  |                9 |             29 |         3.22 |
-|  CLK_IBUF_BUFG | i7/Seconds_1        | i4/SR[0]                         |                7 |             32 |         4.57 |
-|  CLK_IBUF_BUFG |                     | i4/SR[0]                         |               16 |             33 |         2.06 |
-+----------------+---------------------+----------------------------------+------------------+----------------+--------------+
++----------------+---------------------+-------------------------------------+------------------+----------------+--------------+
+|  Clock Signal  |    Enable Signal    |           Set/Reset Signal          | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+---------------------+-------------------------------------+------------------+----------------+--------------+
+|  i10/EDGE_in   |                     | i4/FSM_onehot_state_reg_reg[2]_0    |                1 |              2 |         2.00 |
+|  i3/p_0_in     |                     |                                     |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG | i1/ECC_20C/i2/E[0]  | i4/FSM_onehot_state_reg_reg[4]_0[0] |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG | i1/ECC_50C/i2/E[0]  | i4/FSM_onehot_state_reg_reg[4]_0[0] |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG | i1/ECC_100C/i2/E[0] | i4/FSM_onehot_state_reg_reg[4]_0[0] |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG | i1/ECC_10C/i2/E[0]  | i4/FSM_onehot_state_reg_reg[4]_0[0] |                2 |              4 |         2.00 |
+|  CLK_IBUF_BUFG |                     | i4/AR[0]                            |                7 |             10 |         1.43 |
+|  CLK_IBUF_BUFG |                     | i4/FSM_onehot_state_reg_reg[4]_0[0] |                6 |             20 |         3.33 |
+|  CLK_IBUF_BUFG | i4/count0_1         | i4/FSM_onehot_state_reg_reg[4]_3    |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG | i4/count0_2         | i4/FSM_onehot_state_reg_reg[4]_4    |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG | i4/count0_0         | i4/FSM_onehot_state_reg_reg[4]_2    |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG | i4/count0           | i4/FSM_onehot_state_reg_reg[4]_1    |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG | i9/count0           | i9/count[0]_i_1__3_n_0              |                5 |             20 |         4.00 |
+|  CLK_IBUF_BUFG |                     |                                     |                9 |             29 |         3.22 |
+|  CLK_IBUF_BUFG | i7/Seconds_1        | i4/SR[0]                            |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG |                     | i4/SR[0]                            |               11 |             33 |         3.00 |
++----------------+---------------------+-------------------------------------+------------------+----------------+--------------+
 
 
